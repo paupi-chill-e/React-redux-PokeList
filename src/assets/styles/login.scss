@@ -1,0 +1,35 @@
+$bgd-color: white;
+
+.loginContainer {
+  background: url("../img/backLogIn.png") no-repeat fixed center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .login-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: $bgd-color;
+    border-radius: 3px;
+    width: 20%;
+    padding: 5% 3%;
+    .titleLogIn {
+      font-weight: bold;
+      font-size: 22px;
+      text-align: left;
+      padding-bottom: 15%;
+    }
+    input {
+      align-self: center;
+      width: 95%;
+      padding: 2% 4%;
+      margin-bottom: 10%;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 2% 10%;
+      margin: 10% 0% 10% 0%;
+    }
+  }
+}

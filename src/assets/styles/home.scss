@@ -1,0 +1,149 @@
+$bkg-poke: url("../img/background.png") no-repeat fixed center;
+
+.container-pokelist {
+  background: $bkg-poke;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  padding: 3% 10%;
+  .title-home {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 1.5%;
+  }
+  .parragraph-home {
+    font-size: 17px;
+    padding-bottom: 3%;
+  }
+  .container-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .card-pokemon {
+      filter: drop-shadow(10px 20px 4px rgba(71, 71, 71, 0.568));
+      margin: 3% 6%;
+      .container-img {
+        padding-left: 30px;
+        width: 100px;
+        height: 100px;
+        .img-pokeball {
+          width: 100%;
+        }
+      }
+      .poke-name {
+        width: 90%;
+        padding: 2% 10%;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border-style: double;
+        font-family: pixel;
+        border-radius: 5px;
+      }
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+        color: rgb(26, 26, 26);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.container-loading {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  padding: 10% 10% 25% 10%;
+  .container-pikachu {
+    width: 500px;
+    height: 250px;
+    .pikachu {
+      width: 100%;
+    }
+  }
+  .loading-text {
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+
+
+.container-pokemonPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bkg-poke;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  .container-card-pokemon {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-radius: 3px;
+    width: 500px;
+    padding: 10% 10% 10% 10%;
+    background-color: white;
+    border-style: double;
+    .container-btn-back {
+      margin-bottom: 5%;
+      .btn-back {
+        text-decoration: none;
+        a:link,
+        a:visited,
+        a:active {
+          text-decoration: none;
+          color: rgb(26, 26, 26);
+          font-weight: bold;
+        }
+      }
+    }
+    .container-all-info-pokemon {
+      display: flex;
+      flex-flow: row nowrap;
+      .container-img-title-pokemon {
+        margin-right: 20%;
+        width: 50%;
+        .pokeName {
+          text-align: center;
+          font-family: pixel;
+        }
+        .container-img-sprite {
+         align-self: center;
+          width: 150px;
+          height: 150px;
+          .img-sprite {
+            height: 100%;
+          }
+        }
+      }
+      .container-info {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+        .container-stats{
+          padding-bottom: 10%;
+          .title-info{
+            font-family: 20px;
+            font-weight: bold;
+            padding-bottom: 2%;
+          }
+        }
+        .container-abilities{
+          padding-bottom: 10%;
+          .title-info{
+            font-family: 20px;
+            font-weight: bold;
+            padding-bottom: 2%;
+
+          }
+
+        }
+      }
+    }
+  }
+}
